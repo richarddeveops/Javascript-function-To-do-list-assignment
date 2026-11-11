@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root {
+    font-family: "DM Sans", sans-serif;
+    color: #20283c;
+    background: #f4f6fb;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 64px 20px;
+    display: grid;
+    place-items: start center;
+    background:
+        radial-gradient(ellipse at 12% 8%, rgba(205, 222, 255, 0.62), transparent 34%),
+        radial-gradient(ellipse at 90% 92%, rgba(231, 217, 255, 0.5), transparent 32%),
+        #f4f6fb;
+}
+
+.todo-card {
+    width: min(100%, 560px);
+    padding: 42px;
+    border: 1px solid rgba(226, 231, 242, 0.9);
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 24px 70px rgba(39, 54, 91, 0.1);
+}
+
+.card-header {
+    text-align: center;
+}
+
+.brand-mark {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 17px;
+    background: #edf2ff;
+    color: #536ce5;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #6878c7;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+h1,
+h2 {
+    font-family: "Manrope", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: #20283c;
+    font-size: clamp(29px, 6vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+}
+
+.intro {
+    margin: 10px 0 34px;
+    color: #8991a5;
+    font-size: 15px;
+}
+
+.task-entry label {
+    display: block;
+    margin-bottom: 10px;
+    color: #3e4860;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.entry-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 15px;
+    border: 1px solid #e1e5ef;
+    border-radius: 11px;
+    outline: none;
+    background: #fbfcfe;
+    color: #20283c;
+    font: inherit;
+    font-size: 14px;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input::placeholder {
+    color: #a4aabc;
+}
+
+input:focus {
+    border-color: #7888ed;
+    box-shadow: 0 0 0 3px rgba(120, 136, 237, 0.14);
+}
+
+button {
+    flex: 0 0 auto;
+    padding: 0 19px;
+    border: 0;
+    border-radius: 11px;
+    background: #586fe5;
+    color: #fff;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    background: #465dd1;
+}
+
+button:focus-visible {
+    outline: 3px solid rgba(88, 111, 229, 0.3);
+    outline-offset: 3px;
+}
+
+.task-section {
+    margin-top: 34px;
+    padding-top: 23px;
+    border-top: 1px solid #edf0f5;
+}
+
+h2 {
+    margin: 0 0 12px;
+    color: #3e4860;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#display {
+    margin: 0;
+    padding-left: 25px;
+    color: #414b62;
+    font-size: 14px;
+}
+
+#display li {
+    padding: 11px 8px;
+    border-bottom: 1px solid #f0f2f7;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+#display li:last-child {
+    border-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 28px 14px;
+    }
+
+    .todo-card {
+        padding: 30px 22px;
+        border-radius: 20px;
+    }
+
+    .entry-row {
+        flex-direction: column;
+    }
+
+    button {
+        min-height: 46px;
+    }
+}
