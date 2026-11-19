@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloock&display=swap");
 
 :root {
     font-family: "DM Sans", sans-serif;
@@ -18,10 +18,7 @@ body {
     padding: 64px 20px;
     display: grid;
     place-items: start center;
-    background:
-        radial-gradient(ellipse at 12% 8%, rgba(205, 222, 255, 0.62), transparent 34%),
-        radial-gradient(ellipse at 90% 92%, rgba(231, 217, 255, 0.5), transparent 32%),
-        #f4f6fb;
+    background: #0f1f1a;
 }
 
 .todo-card {
@@ -185,4 +182,93 @@ h2 {
     button {
         min-height: 46px;
     }
+}
+
+:root {
+    color-scheme: dark;
+    color: #e8eee8;
+    background: #0f1f1a;
+}
+
+body {
+    padding-top: 48px;
+    background: #0f1f1a;
+    font-family: "DM Sans", sans-serif;
+}
+
+.todo-card {
+    width: min(100%, 620px);
+    padding: clamp(25px, 6vw, 48px);
+    border: 1px solid #243b33;
+    border-top: 3px solid #d4a359;
+    border-radius: 3px 28px 3px 3px;
+    background: #152720;
+    box-shadow: none;
+}
+
+.card-header { text-align: left; }
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+    margin: 0 0 24px;
+    border: 1px solid #52675b;
+    border-radius: 50%;
+    background: #1d342a;
+    color: #d4a359;
+}
+
+.eyebrow { color: #d4a359; }
+
+h1, h2 {
+    font-family: "Gloock", serif;
+}
+
+h1 {
+    font-size: clamp(2.7rem, 7vw, 4rem);
+    font-weight: 400;
+    letter-spacing: -.025em;
+}
+
+.intro {
+    margin-bottom: 30px;
+    color: #adbbb0;
+}
+
+.task-entry label { color: #e2e8e2; }
+
+input {
+    border-color: #345044;
+    border-radius: 0;
+    background: #101e18;
+    color: #e8eee8;
+}
+
+input:focus {
+    border-color: #d4a359;
+    box-shadow: 0 0 0 2px rgb(212 163 89 / 14%);
+}
+
+button {
+    border-radius: 0;
+    background: #d4a359;
+    color: #19221c;
+    transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover { background: #e6b96f; }
+
+.task-section { border-color: #345044; }
+
+h2 {
+    color: #e8eee8;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#display { padding-left: 22px; }
+
+#display li {
+    border-color: #2b4035;
+    color: #e0e7e0;
 }
